@@ -28,7 +28,7 @@
 </head>
 <body>
 	<section>
-		<img src="dokaben.jpg" alt="太郎のアイコン画像です">
+		<img src="dokaben.jpg" alt="太郎のアイコン画像です" id="trigger">
 		<h1>山田太郎</h1>
 		<p>UI/UX デザイナー見習いです。日々の勉強をがんばっています。</p>
 	</section>
@@ -39,6 +39,10 @@
 	<script>
 		// 厳密なエラーチェックを行う
 		'use strict'
+
+		document.getElementById('trigger').addEventListener('click', function() {
+			alert('山田太郎です！学校に持っていっている弁当箱が大きいので、みんなからはドカベンと呼ばれています！よろしくお願いします！')
+		})
 	</script>
 </body>
 </html>
