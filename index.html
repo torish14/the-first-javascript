@@ -40,9 +40,14 @@
 		// 厳密なエラーチェックを行う
 		'use strict'
 
-		document.getElementById('trigger').addEventListener('click', function() {
-			alert('山田太郎です！学校に持っていっている弁当箱が大きいので、みんなからはドカベンと呼ばれています！よろしくお願いします！')
-		})
+		function process() {
+			document.getElementById('target').innerHTML = '山田太郎です！学校に持っていっている弁当箱が大きいので、みんなからはドカベンと呼ばれています！よろしくお願いします！'
+		}
+
+		document.getElementById('trigger').addEventListener('click', process)
+		// document.getElementById('trigger').addEventListener('click', function() {
+		// 	alert('山田太郎です！学校に持っていっている弁当箱が大きいので、みんなからはドカベンと呼ばれています！よろしくお願いします！')
+		// })
 	</script>
 </body>
 </html>
