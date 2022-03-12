@@ -9,6 +9,11 @@
 	img {
 		border-radius: 50%;
 		cursor: pointer;
+		transition: border-radius 0.5s;
+	}
+
+	.changed {
+		border-radius: 0;
 	}
 
 	section {
@@ -47,6 +52,7 @@
 			// textContent: 内部のテキストを取得する
 			// 参考: https://qiita.com/RyBB/items/c87af2413c34f9367d00
 			document.getElementById('target').innerHTML = '山田太郎です！学校に持っていっている弁当箱が大きいので、みんなからはドカベンと呼ばれています！よろしくお願いします！'
+			document.getElementById('trigger').classList.add('changed')
 		}
 
 		document.getElementById('trigger').addEventListener('click', process)
